@@ -14,9 +14,9 @@ import msal
 #Using (sp-dmp-test-management-01)
 
 # Enter the details of your AAD app registration
-client_id = '2313b199-ea7f-4b21-8400-0cc096eacb54'
-client_secret = 'lJ68Q~1lfOtZa4JXQ6x9LSPMk4IBfYlSsw-57caJ'
-authority = 'https://login.microsoftonline.com/d4167d58-713e-4e8f-8ba2-869b5491fb80'
+client_id = 'xxxxx-xxxxx-xxxxx-xxxx-xxxxxxx'
+client_secret = 'xxxxx-xxxxx-xxxxx-xxxx-xxxxxxx'
+authority = 'https://login.microsoftonline.com/{tenand id}
 scope = ['https://graph.microsoft.com/.default']
 
 # Create an MSAL instance providing the client_id, authority and client_credential parameters
@@ -79,7 +79,7 @@ test.rename(columns = {'_id':'User_GUID', '_displayName':'User', 'id':'AAD_GUID'
 
 
 df = pd.DataFrame(test)
-writer = pd.ExcelWriter('C:/Users/abdera/Documents/EDC/MDM/Python API/AADgroupsmembership.xlsx', engine='xlsxwriter')
+writer = pd.ExcelWriter('C:/Users/......../AADgroupsmembership.xlsx', engine='xlsxwriter')
 df.to_excel(writer, sheet_name='welcome', index=False)
 writer.save()
 
