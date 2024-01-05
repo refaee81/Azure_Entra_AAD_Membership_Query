@@ -11,7 +11,7 @@ Created on Tue Jun 20 11:43:58 2023
 # Define imports
 import msal
 
-#Using (sp-dmp-test-management-01)
+#Using spn (sp-xxxxxxxxxxx)
 
 # Enter the details of your AAD app registration
 client_id = 'xxxxx-xxxxx-xxxxx-xxxx-xxxxxxx'
